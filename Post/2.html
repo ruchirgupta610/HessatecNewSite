@@ -1,0 +1,243 @@
+
+
+    <base href="/" />
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <title> &ndash; Hessatec</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="description" content="Providing Cloud Development, Business Intelligence and Content Creation Services">
+    <meta name="theme-color" content="#7296AC">
+
+    <meta Property="og:locale" content="en_US" />
+    <meta Property="og:type" content="article" />
+    <meta Property="og:title" content="&ndash; Hessatec" />
+    <meta Property="og:description" content="Providing Cloud Development, Business Intelligence and Content Creation Services" />
+    <meta Property="og:url" content="http://hessatec.ruchirgupta.com/" />
+    <meta Property="og:site_name" content="Oktosite" />
+    <meta Property="og:image" content="http://hessatec.ruchirgupta.com/img/og.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Providing Cloud Development, Business Intelligence and Content Creation Services" />
+    <meta name="twitter:title" content="&ndash; Hessatec" />
+    <meta Property="og:image" content="http://hessatec.ruchirgupta.com/img/og.png" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    
+
+    
+
+    <link href="/css/final.css" rel="stylesheet" />
+    
+    <script>
+        postId = 2;
+    </script>
+    <script src="/Angular/angular.min.js"></script>
+    <script>
+        var HessatecApp = angular.module('HessatecApp', []);
+    </script>
+
+    <script src="/Angular/Models/Post.js"></script>
+    <script src="/Angular/Models/Category.js"></script>
+    <script src="/Angular/Models/Tag.js"></script>
+
+    <script src="/Angular/Controllers/PostController.js"></script>
+
+    <script src="/Angular/Data/Categories.js"></script>
+    <script src="/Angular/Data/Posts.js"></script>
+    <script src="/Angular/Data/Tags.js"></script>
+
+
+
+</head>
+<body data-mobile-nav-style="classic">
+
+    <header class="header-with-topbar">
+        <nav class="navbar navbar-expand-lg top-space navbar-light bg-white header-light fixed-top navbar-boxed header-reverse-scroll">
+            <div class="container-fluid nav-header-container">
+                <div class="col-6 col-lg-2 mr-auto pl-lg-0">
+                    <a class="navbar-brand" href="/">
+                        <img src="img/logo.png" data-at2x="img/logo.png" class="default-logo img-responsive" alt="Hessatec">
+                        <img src="img/logo.png" data-at2x="img/logo.png" class="alt-logo img-responsive" alt="Hessatec">
+                        <img src="img/logo.png" data-at2x="img/logo.png" class="mobile-logo img-responsive" alt="Hessatec">
+                    </a>
+                </div>
+                <div class="col-auto menu-order px-lg-0">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class=" collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="/Services" class="nav-link">Services</a>
+                                <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="dropdown"><a href="/Services/cloud-development">Cloud Development</a></li>
+                                    <li class="dropdown"><a href="/Services/business-intelligence">Business Intelligence</a></li>
+                                    <li class="dropdown"><a href="/Services/technical-writing">Technical Writing</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/AboutUs" class="nav-link">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/Blog" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/ContactUs" class="nav-link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+
+<div ng-app="HessatecApp" ng-controller="PostController" ng-init="init()" ng-cloak>
+
+    <section class="wow animate__fadeIn bg-light-gray padding-40px-tb sm-padding-30px-tb page-title-small">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <h1 class="alt-font text-extra-dark-gray font-weight-500 no-margin-bottom d-inline-block">{{p.Title}}</h1>
+                </div>
+                <div class="col-xl-6 col-lg-6 text-center text-lg-right breadcrumb justify-content-center justify-content-lg-end text-small alt-font md-margin-15px-top">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog-right-side-bar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom">
+                    <div class="col-12 blog-post-content overflow-hidden text-center p-0 margin-4-half-rem-bottom wow animate__fadeIn">
+                        <div class="blog-image"><a href="/Post/{{p.Id}}"><img ng-src="/img/BlogImages/{{p.Image}}" alt="{{p.Title}}" /></a></div>
+                        <div class="blog-text d-inline-block w-100">
+                            <div class="content padding-5-half-rem-all lg-padding-4-half-rem-all xs-padding-20px-lr xs-padding-40px-tb position-relative mx-auto w-90 lg-w-100">
+                                <div class="blog-details-overlap text-small font-weight-500 bg-green border-radius-4px alt-font text-white text-uppercase">
+                                    <a href="#" class="text-white">{{p.PostedOnDate}} </a> <span class="margin-5px-lr">.</span> <a href="/Post/{{p.Id}}" class="text-white">{{p.CategoryName}}</a>
+                                </div>
+                                <h6 class="alt-font font-weight-500"><a href="/Post/{{p.Id}}" class="text-extra-dark-gray text-fast-blue-hover">{{p.Title}}</a></h6>
+
+                                <div id="fullPost"></div>
+
+                                <div class="col-12 col-md-9 text-center text-md-left sm-margin-10px-bottom px-0">
+                                    <div class="tag-cloud">
+                                        <a ng-repeat="t in ThisPostTags" href="/Blog">{{t.TagName}}</a>
+                                    </div>
+                                </div>
+                                <div class="margin-90px-top" id="disqus_thread"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+    <footer class="footer-dark bg-slate-blue">
+        <div class="footer-top padding-seven-tb lg-padding-eight-tb sm-padding-50px-tb">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 col-lg-3 col-sm-6 order-5 order-lg-0 text-md-center text-lg-left last-paragraph-no-margin">
+                        <a href="/" class="footer-logo margin-25px-bottom margin-5px-top d-inline-block"><img src="img/logo-white.png" class="img-responsive" data-at2x="img/logo-white.png" alt="Hessatec"></a>
+                        <p>Empowering businesses with next generation solutions.</p>
+                        <p>&copy; Copyright 2021 <a href="/" class="text-decoration-line-bottom text-white">Hessatec</a></p>
+                    </div>
+
+
+                    <div class="col-12 col-lg offset-xl-1 col-md-3 col-sm-4 order-1 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                        <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Services</span>
+                        <ul>
+                            <li><a href="/Services/cloud-development">Cloud Development</a></li>
+                            <li><a href="/Services/business-intelligence">Business Intelligence</a></li>
+                            <li><a href="/Services/technical-writing">Content Creation &amp; Copy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg col-md-3 col-sm-4 order-2 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                        <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Quicklinks</span>
+                        <ul>
+                            <li><a href="/AboutUs">About us</a></li>
+                            <li><a href="/Blog">Blog</a></li>
+                            <li><a href="/ContactUs">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-lg col-md-3 col-sm-4 order-3 order-lg-0 md-margin-40px-bottom xs-margin-25px-bottom">
+                        <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Legal</span>
+                        <ul>
+                            <li><a href="javascript:alert('Privacy Policy page here!')">Privacy Policy</a></li>
+                            <li><a href="javascript:alert('Any terms and conditions page here!')">Terms and Conditions</a></li>
+                            <li><a href="javascript:alert('Any legal disclaimer page here!')">Disclaimer</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-lg col-md-3 col-sm-6 order-4 order-lg-0 xs-margin-25px-bottom">
+                        <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Social Media</span>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.quora.com/" target="_blank">Quora</a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="feather icon-feather-arrow-up"></i></a>
+    <script src="/js/final.js"></script>
+    
+
+    
+    <script>
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://hessatec.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+
+</body>
+</html>
